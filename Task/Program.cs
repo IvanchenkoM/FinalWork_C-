@@ -8,12 +8,11 @@ for(int i=0; i<userArray.Length; i++)
     userArray[i] = ReadString($"Enter the {i+1}th element of the array:\t");
 } 
 
-for (int i=0,j=0; i<userArray.Length; i++)
+for (int i=0; i<userArray.Length; i++)
 {
     if (userArray[i].Length <= searchStringLenght)
     {
-        resultArray[j] = userArray[i];
-        j++;
+        resultArray[i] = userArray[i];
     }
 }
 
